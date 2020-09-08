@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso Programación desde Cero</title>
+
+	<!-- Enlazado Archivo MODERNIZR -->
+	<script src="js\modernizr-custom.js"></script>
+</head>
+<body>
+	<!--
+	<script>
+		let i = 1;
+		for (;i <= 3; i++) {
+  			console.log(i)
+		}
+		console.log(i)
+		console.log(i)
+	</script>
+
+	<script>
+		for (let i = 1; i <= 3; i++) {
+  			console.log(i)
+  			console.log(i)
+  			console.log(i)
+		}
+	</script>
+	<script>
+		let numero = 7;
+		for (let i = 1; i <= 12; i++) {
+  			console.log(numero, 'X', i, '=', numero*i)
+		}
+	</script>
+
+	<script>
+		let continuar = 'Si'
+		numeroDeJuego = 1
+
+		while (continuar == 'Si'){
+
+  			console.log('Es tu juego numero', numeroDeJuego++)
+
+  			continuar = prompt('¿Deseas seguir jugando? Responde "Si" o "No".')
+  		}
+	</script>
+	-->
+	<script>
+
+		let numeroSecreto = 1810
+		let numeroUsuario = 0
+		let intentos = 0
+
+		alert('¡Hola! 👋... Este juego consiste en descubrir un 😎 número secreto 😎 en la menor cantidad de intentos posibles 😀. Este es tu primer intento')
+
+		while (numeroUsuario != numeroSecreto){
+
+  			numeroUsuario = prompt ('Descubre el número oculto. Ingresa tu número a continuación')
+
+  			intentos++
+
+  			if (numeroUsuario < numeroSecreto){
+  				alert("😂 No, no...  👆👆👆👆👆")
+  			}
+
+  			else if (numeroUsuario > numeroSecreto){
+  				alert("😂 No, no...  👇👇👇👇👇")
+  			}
+
+  			else{
+  				alert("👏👏👏¡¡¡Felicitaciones!!!👏👏👏 ¡Lo has conseguido! 🥳. Así es, el número secreto es 😎  "+numeroSecreto +"  😎. Te ha tomado tan sólo " +intentos +" intentos... 🤓")
+  			}
+  		}
+
+	</script>
+
+</body>
+</html>
