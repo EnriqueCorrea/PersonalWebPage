@@ -1,1 +1,1 @@
-# video-render
+# Página personal de estudio.
